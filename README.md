@@ -1,2 +1,2 @@
 # challenge
-2 Coding Problems Everyday
+Coding Problems Everyday
