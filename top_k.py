@@ -4,11 +4,21 @@ def topKFrequent(nums, k):
     :type k: int
     :rtype: List[int]
     """
-    l = [0]*(max(nums)+1)
+    pairs ={}
     for each in nums:
-        print(each)
-        l[each] += 1
-    l = sorted(l)
-    return (l[len(l)-k:len(l)])
-print(topKFrequent([1,1,1,2,2,3], 2))
+        if(each in pairs):
+            pairs[each] += 1
+        else:
+            pairs[each] = 1
+    import operator
+    sorted_x = sorted(pairs.items(), key=operator.itemgetter(0))
+
+    coutn = 0
+    ret = []
+    for each in sorted_x:
+        if(len(ret)==k): break
+        ret.append(each[0])
+    return ret
+   
+print(topKFrequent([-1, -1], 2))
     
