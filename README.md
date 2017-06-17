@@ -1,2 +1,0 @@
-# challenge
-Coding Problems Everyday
