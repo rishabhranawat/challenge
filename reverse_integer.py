@@ -1,29 +1,20 @@
-def reverse(x):
+def reverse(self, x):
     """
     :type x: int
     :rtype: int
     """
-    neg = False
-    if(x < 0):
-        neg = True
-        x = -1*x
-        
-    x = list(str(x))
-    start = 0
-    end = len(x)-1
-    while(start <= end):
-        temp = x[start]
-        x[start] = x[end]
-        x[end] = temp
-        start += 1
-        end -= 1
-    x = "".join(x)
-    if(neg): return int("-"+x)
-    else: return int(x)
-
-def reverse(x):
-    int ret = 0
-    while(x != 0):
-        ret = ret*10 + x % 10
+    if(x == 0): return 0
+    ma = 2**31 - 1
+    mi = - (ma)
+    og = x
+    if(x < 0):x = x*-1
+    rev = ""
+    while(x > 0):
+        rev += str(x%10)
         x = x/10
-    return ret
+    if(int(rev) < mi or int(rev) > ma): return 0
+    else: 
+        if(og < 0): return -int(rev)
+        else: return int(rev)
+            
+        
