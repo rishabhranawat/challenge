@@ -4,30 +4,27 @@ class Solution(object):
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        red = 0
-        blue = 1
-        white = 2
-        
+
+        for i in range(0, len(nums), 1):
+            
+
+
+        red = None
+        blue = None
+        white = None
+
         counter = 0
-        while(counter < len(nums)):
-            if(nums[counter] == 0):
-                if(red == -1): red = counter
+        n = len(nums)
+        while(counter <n):
+            color = nums[counter]
+            if(color == 1):
+                if(red == None):
+                    red = counter
                 else:
                     temp = nums[red+1]
-                    nums[red+1] = nums[counter]
+                    nums[red+1] = color
+                    nums[counter] = temp
                     red += 1
-            elif(nums[counter] == 1):
-                if(blue == -1): blue = counter
-                else:
-                    temp = nums[blue+1]
-                    nums[blue+1] = nums[counter]
-                    blue += 1
-            elif(nums[counter] == 2):
-                if(blue == -1): white = counter
-                else:
-                    temp = nums[white+1]
-                    nums[white+1] = nums[counter]
-                    white += 1
             counter += 1
         print(nums)
                      
