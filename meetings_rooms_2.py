@@ -16,6 +16,8 @@ class Solution(object):
         self.meetings = {}
     
     def isOverlap(self, interval1, interval2):
+        print(interval1.start, interval1.end)
+        print(interval2.start, interval2.end)
         if((interval1.end >= interval2.start) or (interval1.start >= interval2.end)):
             return False
         return True
