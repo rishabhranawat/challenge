@@ -37,9 +37,40 @@ public class ReversePolish {
         return total;
     }
 
+    public List<List<Integer>> threeSum2(int[] nums) {
+        List<List<Integer>> list = new ArrayList<>();
+
+        Integer a;
+        Integer b;
+        Integer c;
+
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length - 2; i++) {
+            a = nums[i];
+            int start = i + 1;
+            int end = nums.length - 1;
+            while (start < end) {
+                b = nums[start];
+                c = nums[end];
+
+                if (a + b + c == 0) {
+                    Integer[] works = {a, b, c};
+                    if(!list.contains(Arrays.asList(works))) list.add(Arrays.asList(works));
+                    start += 1;
+                    end -= 1;
+                } else if (a + b + c > 0) {
+                    end -= 1;
+                } else {
+                    start += 1;
+                }
+            }
+        }
+        return list;
+    }
+
     public static void main(String[] args){
-        String[] e =  {"4", "13", "5", "/", "+"};
-        ReversePolish r = new ReversePolish();
-        System.out.println(r.evalRPN(e));
+        ReversePolish s = new ReversePolish();
+        int[] nums = {-2,0,1,1,2};
+        System.out.println(s.threeSum2(nums));
     }
 }
