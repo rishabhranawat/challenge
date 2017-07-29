@@ -10,14 +10,14 @@
 # Could you implement it using only constant extra space complexity?
 
 ### ### ###
-
-def missingNumber(nums):
-    """
-    :type nums: List[int]
-    :rtype: int
-    """
-    for i in range(0, len(nums), 1):
-        if(i != nums[i]): return i
-    return -1
-
-print(missingNumber([0, 1, 2, 4]))
+class Solution(object):
+    def missingNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """ 
+        n = len(nums)
+        s = (n*(n+1))/2
+        for i in range(0, len(nums), 1):
+            s -= nums[i]
+        return s
