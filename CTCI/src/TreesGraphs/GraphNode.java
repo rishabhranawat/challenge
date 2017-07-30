@@ -10,6 +10,7 @@ public class GraphNode{
     Integer val;
     List<GraphNode> adjacent;
     RouteBetweenNodes.State state;
+    BuildOrder.State st;
 
     public GraphNode(int val){
         this.val = val;
