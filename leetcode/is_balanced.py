@@ -22,4 +22,3 @@ class Solution(object):
         if(abs(l-r) > 1): return False
         else: return self.isBalanced(root.left) and self.isBalanced(root.right)
         
-        
