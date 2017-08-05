@@ -1,3 +1,5 @@
+# Checkout Fisher Yates
+
 import random
 class Solution(object):
     def __init__(self, nums):
