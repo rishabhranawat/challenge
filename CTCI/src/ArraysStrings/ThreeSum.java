@@ -12,10 +12,7 @@ public class ThreeSum {
         for(int i = 0; i < nums.length; i++){
             complementsIndex.put(nums[i] - twoSum, i);
         }
-
-        for(int i = 0; i < nums.length; i++){
-            int comp =
-        }
+        return null;
     }
 
 
