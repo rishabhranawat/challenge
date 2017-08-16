@@ -14,7 +14,7 @@ public class ThreeSum {
         }
 
         for(int i = 0; i < nums.length; i++){
-            int comp = 
+            int comp =
         }
     }
 

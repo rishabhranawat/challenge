@@ -15,10 +15,10 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.31773177">
+    <splitter split-orientation="horizontal" split-proportion="0.5940594">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="RouteBetweenNodes.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="RouteBetweenNodes.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/TreesGraphs/RouteBetweenNodes.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="118">
@@ -33,8 +33,8 @@
           <file leaf-file-name="MinimalTree.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/TreesGraphs/MinimalTree.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="37" />
+                <state relative-caret-position="450">
+                  <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -44,7 +44,7 @@
             <entry file="file://$PROJECT_DIR$/src/TreesGraphs/ListOfDepths.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="480">
-                  <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="50" selection-end-column="27" />
+                  <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -73,9 +73,22 @@
           <file leaf-file-name="Successor.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/TreesGraphs/Successor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+                <state relative-caret-position="315">
+                  <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LevelOrderTraversal.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/TreesGraphs/LevelOrderTraversal.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#246#256#0" expanded="true" />
+                    <element signature="e#310#320#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -83,7 +96,7 @@
           <file leaf-file-name="BuildOrder.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/TreesGraphs/BuildOrder.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1545">
+                <state relative-caret-position="1455">
                   <caret line="103" column="49" lean-forward="false" selection-start-line="103" selection-start-column="49" selection-end-line="103" selection-end-column="49" />
                   <folding />
                 </state>
@@ -93,18 +106,8 @@
           <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/TreesGraphs/TreeNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/TreesGraphs/Graph.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -184,7 +187,7 @@
             <entry file="file://$PROJECT_DIR$/src/ArraysStrings/ThreeSum.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="240">
-                  <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+                  <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -230,6 +233,7 @@
         <option value="$PROJECT_DIR$/src/ArraysStrings/URLify.java" />
         <option value="$PROJECT_DIR$/src/ArraysStrings/PallindromePermutation.java" />
         <option value="$PROJECT_DIR$/src/ArraysStrings/ThreeSum.java" />
+        <option value="$PROJECT_DIR$/src/TreesGraphs/LevelOrderTraversal.java" />
       </list>
     </option>
   </component>
@@ -283,6 +287,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TreesGraphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -295,10 +303,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArraysStrings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -316,6 +320,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="FullScreen" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/rishabh/Dropbox/challenge/CTCI/src/TreesGraphs/LevelOrderTraversal.java" />
   </component>
   <component name="RunManager" selected="Application.PallindromePermutation">
     <configuration default="false" name="BuildOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -902,12 +907,12 @@
       <workItem from="1501371007204" duration="1147000" />
       <workItem from="1501423733498" duration="11400000" />
       <workItem from="1501981094109" duration="3685000" />
-      <workItem from="1502574824033" duration="279000" />
+      <workItem from="1502574824033" duration="3285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16511000" />
+    <option name="totallyTimeSpent" value="19517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1192,61 +1197,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/Successor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/ListOfDepths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="50" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TreesGraphs/GraphNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/BuildOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="103" column="49" lean-forward="false" selection-start-line="103" selection-start-column="49" selection-end-line="103" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/MinimalTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/RouteBetweenNodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1289,8 +1244,69 @@
     <entry file="file://$PROJECT_DIR$/src/ArraysStrings/ThreeSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/RouteBetweenNodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/BuildOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="103" column="49" lean-forward="false" selection-start-line="103" selection-start-column="49" selection-end-line="103" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/MinimalTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/ListOfDepths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/Successor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TreesGraphs/LevelOrderTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#246#256#0" expanded="true" />
+            <element signature="e#310#320#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
