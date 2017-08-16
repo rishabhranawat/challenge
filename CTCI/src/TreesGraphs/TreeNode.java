@@ -8,6 +8,7 @@ public class TreeNode {
     TreeNode left;
     TreeNode right;
     TreeNode parent;
+    TreeNode next;
 
     public TreeNode(Integer val){
         this.val = val;
