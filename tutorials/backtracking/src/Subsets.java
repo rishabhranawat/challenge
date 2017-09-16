@@ -19,7 +19,7 @@ public class Subsets{
 	}
 	public static void main(String[] args){
 		Subsets sub = new Subsets();
-		int[] s = {1, 2, 3};
-		sub.subsets(s);
+		int[] s = {1, 2, 3, 3};
+		System.out.println(sub.subsets(s));
 	}
 }

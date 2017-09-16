@@ -4,29 +4,11 @@ class Solution(object):
         :type n: int
         :rtype: str
         """
-        n_str = str(n)
-        if(len(n_str) == 0): return ""
-
-        curr_counter = 1
-        counter = 1
-        prev_letter = n_str[0]
-        ret_str = ""
-        while(counter < len(n_str)):
-            letter = n_str[counter]
-            if(prev_letter != letter):
-                if(curr_counter == 1):
-                    ret_str += str(prev_letter)
-                else:
-                    ret_str += str(curr_counter)+str(prev_letter)
-                curr_counter = 1
-                prev_letter = n_str[counter]
-            else:
-                curr_counter += 1
-            counter += 1
-        if(curr_counter == 1):
-            ret_str+=str(prev_letter)
-        else:
-            ret_str += str(curr_counter)+str(prev_letter)
-        return ret_str
+        patterns = {5:"three 1s one 2", 4:"one two two 1s", 3:"one 2 one 1", 2:"two 1s", 1: "one 1"}
+        ret = None
+        for key in range(5, 0, -1):
+            if(n > key): 
+                div = key/n
+                return ((patterns[key]+" ")*(n/key)).strip()
 a = Solution()
-print(a.countAndSay(1))
+print(a.countAndSay(16))
