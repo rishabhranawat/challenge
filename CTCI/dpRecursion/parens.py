@@ -14,7 +14,6 @@ class Parens(object):
         if(left < 0 or right < left): return
         
         if(left == 0 and right == 0):
-            
             pare.append("".join(s))
         else:
             if(left > 0):

@@ -18,7 +18,21 @@ class Solution(object):
             elif(prof > m):
                 m = prof
         return m
-        
+    
+    def maxProf(self, prices):
+
+        min_price = prices[0]
+        max_prof = 0
+
+        for i in range(0, len(prices), 1):
+            if(prices[i] < min_price):
+                min_price = prices[i]
+            else:
+                prof = prices[i] - min_price
+                if(prof > max_prof):
+                    max_prof = prof
+        return max_prof
+
 
 a = Solution()
-print(a.maxProfit([0]))
+print(a.maxProf([7, 1, 5, 3, 6, 4]))
