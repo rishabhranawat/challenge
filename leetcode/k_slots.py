@@ -1,37 +1,93 @@
+class BIT(object):
+    def __init__(self, nums):
+        self.nums = [0]*(len(nums))
+        self.bit = [0]*(len(nums)+1)
+
+    def next(self, index):
+        complement = ~index+1
+        return index + (complement&index)
+
+    def parent(self, index):
+        complement = ~index+1
+        return index - (complement&index)
+
+    def update(self, index, value):
+        diff = value - self.nums[index]
+        self.nums[index]=value
+
+        index = index + 1
+        next = index
+        while(next < len(self.bit)):
+            self.bit[next] += diff
+            next = self.next(next)
+        return True
+
+    def cumulate(self, index):
+        index = index + 1
+        prev = index
+        cumu = 0
+        while(prev > 0):
+            cumu += self.bit[prev]
+            prev = self.parent(prev)
+        return cumu
+
 class Solution(object):
+
     def kEmptySlots(self, flowers, k):
-        days = [0] * len(flowers)
-        for day, position in enumerate(flowers, 1):
-            days[position - 1] = day
+        """
+        :type flowers: List[int]
+        :type k: int
+        :rtype: int
+        """
+        n = len(flowers)
+        bloomed = [1]*n
 
-        ans = float('inf')
-        left, right = 0, k+1
-        while right < len(days):
-            for i in xrange(left + 1, right):
-                if days[i] < days[left] or days[i] < days[right]:
-                    left, right = i, i+k+1
-                    break
-            else:
-                ans = min(ans, max(days[left], days[right]))
-                left, right = right, right+k+1
+        bit = BIT(bloomed)
+        dic = {}
+        for i in range(0, len(flowers), 1):
+            index = flowers[i]-1
+            bit.update(index, 1)
 
-        return ans if ans < float('inf') else -1
-
-    def kEmptySlotsA(self, flowers, k):
-        active = []
-        for day, flower in enumerate(flowers, 1):
-            i = bisect.bisect(active, flower)
-            for neighbor in active[i-(i>0):i+1]:
-                if abs(neighbor - flower) - 1 == k:
-                    return day
-            active.insert(i, flower)
+            current = bit.cumulate(index)
+            if(index+k+1 in dic):
+                score = bit.cumulate(index+k+1)-current
+                if(score == 1): return i+1
+            if(index-k-1 in dic):
+                score = current-bit.cumulate(index-k-1)
+                if(score == 1): return i+1
+            dic[index] = True
         return -1
 
-
-
-
+def kEmptySlots(self, flowers, k):
+        """
+        :type flowers: List[int]
+        :type k: int
+        :rtype: int
+        """
+        tree = [0]*(len(flowers)+1)
+        maxVal = len(flowers)
+        def update(idx,val):
+            while idx <= maxVal:
+                tree[idx] += val
+                idx += (idx & -idx)
+        def read(idx):
+            sum = 0
+            while idx > 0:
+                sum += tree[idx]
+                idx -= (idx&-idx)
+            return sum
+        d = dict()
+        for i,v in enumerate(flowers):
+            update(v,1)
+            if v - k - 1 in d:
+                if read(v)-read(v-k-1) == 1:
+                    return i+1
+            if v + k + 1 in d:
+                if read(v+k+1) - read(v) == 1:
+                    return i+1
+            d[v] = True
+        return -1
 a = Solution()
-print(a.kEmptySlotsA([3,9,2,8,1,6,10,5,4,7], 1))
-# print(a.kEmptySlots([1,3,2], 1))
-
-# print(a.kEmptySlots([1,2,3], 1))
+print(a.kEmptySlots([6,5,8,9,7,1,10,2,3,4], 2))
+print(a.kEmptySlots([1,3,2], 1))
+print(a.kEmptySlots([1,2,3], 1))
