@@ -29,8 +29,9 @@ class Solution(object):
 
 		return ret
 
-	def optimizedHeap(self, a, b):
-
+	# def optimizedHeap(self, a, b):
+	# 	min_heap = 
+	# 	heappush()
 
 	def findMedianSortedArrays(self, nums1, nums2):
 		"""
