@@ -59,6 +59,6 @@ class Solution(object):
         return -1
 
 a = Solution()
-print(a.kEmptySlots([6,5,8,9,7,1,10,2,3,4], 2))
+print(a.kEmptySlots([3, 1, 5, 4, 2], 1))
 print(a.kEmptySlots([1,3,2], 1))
 print(a.kEmptySlots([1,2,3], 1))
