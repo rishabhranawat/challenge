@@ -4,7 +4,6 @@ def lengthLongestPath(input):
     for line in input.splitlines():
         name = line.lstrip('\	')
         depth = len(line) - len(name)
-        print(line, name, depth, pathlen)
         if '.' in name:
             maxlen = max(maxlen, pathlen[depth] + len(name))
         else:

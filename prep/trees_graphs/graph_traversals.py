@@ -3,6 +3,27 @@ class GraphNode:
 		self.val = n
 		self.children = []
 
+
+def dfs(node, visited):
+	if(node in visited): return
+	else:
+		print(node.val)
+		for each in node.children:
+			if(each not in visited):
+				dfs(each, visited)
+
+def bfs(node):
+	queue = [root]
+	visited = set()
+	while(queue):
+		visiting = queue.pop(0)
+		if(visiting in visited): continue
+		else:
+			print(visiting.val)
+			for each in visiting.children:
+				if(each not in visited and each not in queue):
+					queue.append(each)
+
 '''
 Recursive algorithm.
 O(V+E)
