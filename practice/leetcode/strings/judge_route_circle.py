@@ -35,3 +35,5 @@ print(a.judgeCircle("RRLLDDLRLRLU"))
 # x = -1 - 1- 1
 # y = 0
 
+# Space complexity is O(1) and time complexity is O(N)
+
