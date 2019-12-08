@@ -12,6 +12,8 @@ class TreeBuilder(object):
 
 		n = len(nodes)
 		for i in range(0, n, 1):
+			if(nodes[i] == None):
+				continue
 			left = 2*(i+1)-1
 			right = 2*(i+1)
 
