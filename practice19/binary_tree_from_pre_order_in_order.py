@@ -1,11 +1,10 @@
 # Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 from collections import deque
-
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
 
 class Solution(object):
 
@@ -15,13 +14,16 @@ class Solution(object):
 		:type inorder: List[int]
 		:rtype: TreeNode
 		"""
+		if(len(preorder) == 0 or len(preorder) != len(inorder)):
+			return None
+		
 		rootNode = TreeNode(preorder[0])
 
 		stack = deque()
 		stack.append(rootNode)
 
 		j = 0
-		for i in range(0, len(preorder), 1):
+		for i in range(1, len(preorder), 1):
 			head = TreeNode(preorder[i])
 
 			parent = stack[-1]
@@ -34,9 +36,3 @@ class Solution(object):
 				parent.right = head
 			stack.append(head)
 		return rootNode
-
-s = Solution()
-a = s.buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
-
-
-
